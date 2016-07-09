@@ -1,0 +1,132 @@
+/* Clean */
+html, body, h1, p, a, div, section {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+.section1 {
+  /* Location of the image */
+  background-image: url(../img/home-fit.jpg);
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  /* Makes the background image rescale based on its container's size */
+  background-size: cover;
+  /* Background color that will be displayed while the background image is loading */
+  background-color: #060D17;
+  /* At least 100% screen height, dynamically */
+  min-height: 100vh;
+  /* Place in back */
+  z-index: 0;
+}
+
+.container {
+  height: 100%;
+  display: table;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.section1-content{ 
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  -webkit-filter: drop-shadow(8px 8px 8px black) opacity(94%); /* Chrome, Opera, Firefox */
+  filter: drop-shadow(8px 8px 8px black) opacity(94%); /* Others */
+}
+.section1-content .img-itac{
+  width: 18vw;
+}
+.section1-content .img-icon{
+  width: 26vw;
+}
+.section1-content .scroll{
+  left: -webkit-calc(50% - 25px);
+  left: calc(50% - 25px);
+  -webkit-animation: jumping 1.2s ease 0.2s infinite forwards;
+  -moz-animation: jumping 1.2s ease 0.2s infinite forwards;
+  -o-animation: jumping 1.2s ease 0.2s infinite forwards;
+  animation: jumping 1.2s ease 0.2s infinite forwards;
+
+  -webkit-filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Chrome, Opera, Firefox */
+  filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Others */
+}
+
+@-moz-keyframes jumping {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  50% {
+    -moz-transform: translateY(0.25em);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes jumping {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(0.25em);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes jumping {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.25em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .section1-content .img-itac{
+    width: 63vw;
+  }
+  .section1-content .img-icon{
+    width: 75vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section1-content .img-itac{
+    width: 57vw;
+  }
+  .section1-content .img-icon{
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .section1-content .img-itac{
+    width: 40vw;
+  }
+  .section1-content .img-icon{
+    width: 55vw;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .section1-content .img-itac{
+    width: 33vw;
+  }
+  .section1-content .img-icon{
+    width: 45vw;
+  }
+}
