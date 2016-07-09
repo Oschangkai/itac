@@ -1,4 +1,9 @@
 $(function() {
+	// Disable animations/transitions until the page has loaded.
+	$('body').addClass('is-loading');
+	$(document).ready(function($) {
+		$('body').removeClass('is-loading');
+	});
   $.scrollIt({
   	topOffset: -86
   });
