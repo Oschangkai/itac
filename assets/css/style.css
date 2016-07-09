@@ -2,10 +2,35 @@
 html, body, h1, p, a, div, section {
   margin: 0;
   padding: 0;
-  font-size: 100%;
-  font: inherit;
+}
+/* Navbar */
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  height: 100%;
+  display: table;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.navbar.act1 {
+  padding-top: 30px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255,254,255,0.8)!important;
+}
+.navbar.act2 {
+  padding-top: 9px;
+  height: 85px;
+  background-color: rgba(255, 254, 255, 0.99);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
+/* Section1 */
 .section1 {
   /* Location of the image */
   background-image: url(../img/home-fit.jpg);
@@ -25,14 +50,6 @@ html, body, h1, p, a, div, section {
   /* Place in back */
   z-index: 0;
 }
-
-.container {
-  height: 100%;
-  display: table;
-  padding-top: 80px;
-  width: 100%;
-}
-
 .section1-content{ 
   display: table-cell;
   vertical-align: middle;
@@ -43,13 +60,17 @@ html, body, h1, p, a, div, section {
   -webkit-filter: drop-shadow(8px 8px 8px black) opacity(94%); /* Chrome, Opera, Firefox */
   filter: drop-shadow(8px 8px 8px black) opacity(94%); /* Others */
 }
-.section1-content .img-itac{
-  width: 18vw;
+.sec1Slogan{
+  color: rgba(255,254,255,0.9);
+  font-size: 180%;
 }
-.section1-content .img-icon{
-  width: 26vw;
+.img-itac{
+  width: 13vw;
 }
-.section1-content .scroll{
+.img-icon{
+  width: 20vw;
+}
+.sec1Dropdown{
   left: -webkit-calc(50% - 25px);
   left: calc(50% - 25px);
   -webkit-animation: jumping 1.2s ease 0.2s infinite forwards;
@@ -95,38 +116,36 @@ html, body, h1, p, a, div, section {
   }
 }
 
-@media only screen and (max-width: 550px) {
-  .section1-content .img-itac{
-    width: 63vw;
-  }
-  .section1-content .img-icon{
-    width: 75vw;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .section1-content .img-itac{
-    width: 57vw;
-  }
-  .section1-content .img-icon{
-    width: 70vw;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .section1-content .img-itac{
-    width: 40vw;
-  }
-  .section1-content .img-icon{
-    width: 55vw;
-  }
-}
 
 @media only screen and (max-width: 1060px) {
-  .section1-content .img-itac{
+  .img-itac{
+    width: 23vw;
+  }
+  .img-icon{
+    width: 30vw;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .img-itac{
+    width: 25vw;
+  }
+  .img-icon{
     width: 33vw;
   }
-  .section1-content .img-icon{
-    width: 45vw;
+}
+@media only screen and (max-width: 640px) {
+  .img-itac{
+    width: 30vw;
+  }
+  .img-icon{
+    width: 38vw;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .img-itac{
+    width: 33vw;
+  }
+  .img-icon{
+    width: 41vw;
   }
 }

@@ -11,21 +11,41 @@
 <!-- CSSs -->
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/style.css">
-  <!--<link rel="stylesheet" href="assets/css/test.css">-->
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.css' media='all' rel='stylesheet'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.css'>
 </head>
 
 <body>
-<!-- Navbar -->
-<!-- Content -->
+<!-- Sections -->
   <section class="section1" data-scroll-index="1">
+
+    <!-- Navbar -->
+    <nav class="navbar act1">
+      <div class="ui secondary menu huge container">
+        <a class="item" data-scroll-nav="1"><img src="assets/img/icon-red.png" style="height: 40px; weight: 40px; margin: 0; padding: 0;"></a>
+        <a class="item" data-scroll-nav="2">關於本社</a>
+        <a class="item" data-scroll-nav="3">作品集</a>
+        <div class="right menu">
+          <a class="ui item" href="mailto:itac@itaclub.asia">聯絡我們</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section1-Content -->
     <content class="section1-content">
+      <br />
       <img src="assets/img/icon.png" class="img-icon"><br /><br />
-      <img src="assets/img/itac.png" class="img-itac"><br /><br />
-      <a style="color: hsl(0, 0%, 90%);" data-scroll-goto="2"><i class="dropdown icon scroll huge"></i></a>
+      <img src="assets/img/itac.png" class="img-itac"><br /><br /><br /><br />
+      <strong class="sec1Slogan">成為資深工具人的最後一個步驟</strong><br /><br /><br />
+      <a style="color: hsl(0, 0%, 90%);" data-scroll-goto="2"><i class="dropdown icon huge sec1Dropdown"></i></a>
     </content>
+
   </section>
-    <div style="height: 100vh; background-color: white;" data-scroll-index="2"></div>
+
+  <section class="section2" style="height: 90vh; background-color: white;" data-scroll-index="2">
+  </section>
+
+  <section class="section3" style="height: 200vh; background-color: yellow;" data-scroll-index="3">
+  </section>
 
 <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
