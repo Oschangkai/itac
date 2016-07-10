@@ -5,7 +5,7 @@ $(function() {
   });
   //scrolling effect
   $.scrollIt({
-    topOffset: -90
+    topOffset: -145
   });
 });
 //Remove elements when mobile

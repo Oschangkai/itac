@@ -26,11 +26,11 @@
 nav.act1>div>a, nav.act1>div>div>a{
   color: rgba(240, 240, 240, 0.8)!important;
 }
-nav.act2>div>div>a{
-  color: rgba(219, 40, 40, 1)!important;
-}
 nav.act2>div>div>a>i{
   color: rgba(0, 0, 0, 1)!important;
+}
+nav.act2>div>div>a{
+  color: rgba(219, 40, 40, 1)!important;
 }
 
 #mobile{
@@ -45,9 +45,6 @@ nav.act2>div>div>a>i{
   background-position: center center;
   /* Image doesn't repeat */
   background-repeat: no-repeat;
-  /* Makes the image fixed in the viewport so that it doesn't move when 
-     the content height is greater than the image height */
-  background-attachment: fixed;
   /* Makes the background image rescale based on its container's size */
   background-size: cover;
   /* Background color that will be displayed while the background image is loading */
@@ -73,17 +70,17 @@ nav.act2>div>div>a>i{
 .img-icon{
   width: 20vw;
 }
-/*.sec1Dropdown{
-/*  left: -webkit-calc(50% - 25px);
-/*  left: calc(50% - 25px);
-/*  -webkit-animation: jumping 1.2s ease 0.2s infinite forwards;
-/*  -moz-animation: jumping 1.2s ease 0.2s infinite forwards;
-/*  -o-animation: jumping 1.2s ease 0.2s infinite forwards;
-/*  animation: jumping 1.2s ease 0.2s infinite forwards;
-/*
-/*  -webkit-filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Chrome, Opera, Firefox */
-/*  filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Others */
-/*}*/
+.sec1Dropdown{
+  left: -webkit-calc(50% - 25px);
+  left: calc(50% - 25px);
+  -webkit-animation: jumping 1.2s ease 0.2s infinite forwards;
+  -moz-animation: jumping 1.2s ease 0.2s infinite forwards;
+  -o-animation: jumping 1.2s ease 0.2s infinite forwards;
+  animation: jumping 1.2s ease 0.2s infinite forwards;
+
+  -webkit-filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Chrome, Opera, Firefox */
+  filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Others */
+}
 
 @-moz-keyframes jumping {
   0% {
@@ -151,7 +148,7 @@ nav.act2>div>div>a>i{
     width: 41vw;
   }
 }
-/* Section1 */
-.section2{
+/* Section2 */
+.section2-content{
   margin: 4em 0em 3em;
 }
