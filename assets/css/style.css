@@ -67,27 +67,23 @@ nav.act2>div>div>a>i{
   -webkit-filter: drop-shadow(8px 8px 8px black) opacity(94%); /* Chrome, Opera, Firefox */
   filter: drop-shadow(8px 8px 8px black) opacity(94%); /* Others */
 }
-.sec1Slogan{
-  color: rgba(255,254,255,0.9);
-  font-size: 165%;
-}
 .img-itac{
   width: 13vw;
 }
 .img-icon{
   width: 20vw;
 }
-.sec1Dropdown{
-  left: -webkit-calc(50% - 25px);
-  left: calc(50% - 25px);
-  -webkit-animation: jumping 1.2s ease 0.2s infinite forwards;
-  -moz-animation: jumping 1.2s ease 0.2s infinite forwards;
-  -o-animation: jumping 1.2s ease 0.2s infinite forwards;
-  animation: jumping 1.2s ease 0.2s infinite forwards;
-
-  -webkit-filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Chrome, Opera, Firefox */
-  filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Others */
-}
+/*.sec1Dropdown{
+/*  left: -webkit-calc(50% - 25px);
+/*  left: calc(50% - 25px);
+/*  -webkit-animation: jumping 1.2s ease 0.2s infinite forwards;
+/*  -moz-animation: jumping 1.2s ease 0.2s infinite forwards;
+/*  -o-animation: jumping 1.2s ease 0.2s infinite forwards;
+/*  animation: jumping 1.2s ease 0.2s infinite forwards;
+/*
+/*  -webkit-filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Chrome, Opera, Firefox */
+/*  filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Others */
+/*}*/
 
 @-moz-keyframes jumping {
   0% {
