@@ -12,22 +12,48 @@
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.css'>
+<!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
 
-<body class="landing">
+<body>
+<!-- loader -->
+  <load class="ui active dimmer">
+    <load class="ui loader huge indeterminate"></load>
+  </load>
 <!-- Sections -->
   <section class="section1" data-scroll-index="1">
 
     <!-- Navbar -->
     <nav class="navbar act1">
+    <!-- Top -->
       <div class="ui secondary menu huge container">
         <a class="item" data-scroll-nav="1"><img src="assets/img/icon-red.png" style="height: 40px; weight: 40px; margin: 0; padding: 0;"></a>
         <a class="item red" data-scroll-nav="2">關於本社</a>
         <a class="item red" data-scroll-nav="3">作品集</a>
         <div class="right menu">
           <a class="ui item red" href="mailto:itac@itaclub.asia">聯絡我們</a>
+          <a class="ui item" onclick="$('.ui.labeled.icon.sidebar').sidebar('toggle');">
+            &nbsp;&nbsp;<i class="content icon large black"></i></a>
         </div>
       </div>
+        <!-- Mobile -->
+        <snav class="ui left vertical sidebar labeled icon menu inverted">
+          <a class="item">
+            <i><img src="assets/img/icon-red.png" style="height: 40px; weight: 40px;"></i><br /> ITAC </a>
+          <a class="item red" data-scroll-nav="1">
+            <i class="home icon"></i>首頁</a>
+          <a class="item red" data-scroll-nav="2">
+            <i class="info icon"></i>關於本社</a>
+          <a class="item red" data-scroll-nav="3">
+            <i class="idea icon"></i>作品集</a>
+          <a class="ui item red" href="mailto:itac@itaclub.asia">
+            <i class="mail icon"></i>聯絡我們</a>
+        </snav>
     </nav>
 
     <!-- Section1-Content -->
@@ -48,11 +74,6 @@
   </section>
 
   <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.js"></script>
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
   <script src="assets/js/scrollIt.min.js"></script>
   <script src="assets/js/parallax.min.js"></script>
   <script src="assets/js/main.js"></script>
