@@ -5,7 +5,7 @@
             <square70x70logo src="assets/favicon/ms-icon-70x70.png" />
             <square150x150logo src="assets/favicon/ms-icon-150x150.png" />
             <square310x310logo src="assets/favicon/ms-icon-310x310.png" />
-            <TileColor>#B03060</TileColor>
+            <TileColor>#DB2828</TileColor>
         </tile>
     </msapplication>
 </browserconfig>
