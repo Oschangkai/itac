@@ -10,6 +10,7 @@
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+/* Navbar - act1 when on the top, act2 for the rest of condictions */
 .navbar.act1 {
   padding-top: 30px;
   height: 120px;
@@ -23,9 +24,11 @@
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
+/* Navebar - act1's text color */
 nav.act1>div>a, nav.act1>div>div>a{
   color: rgba(240, 240, 240, 0.8)!important;
 }
+/* Navebar - act2's text color (2 styles) */
 nav.act2>div>div>a>i{
   color: rgba(0, 0, 0, 1)!important;
 }
@@ -33,6 +36,8 @@ nav.act2>div>div>a{
   color: rgba(219, 40, 40, 1)!important;
 }
 
+/** hide something on mobile devices
+ *  use '.desktop' class to assign what to show only on desktop, defined in main.js */
 #mobile{
   display: none;
 }
@@ -81,7 +86,7 @@ nav.act2>div>div>a{
   -webkit-filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Chrome, Opera, Firefox */
   filter: drop-shadow(6px 6px 6px black) opacity(90%); /* Others */
 }
-
+/* Section1 - dropdown animation */
 @-moz-keyframes jumping {
   0% {
     -moz-transform: translateY(0);
@@ -115,7 +120,7 @@ nav.act2>div>div>a{
     transform: translateY(0);
   }
 }
-
+/* Section1 - two icons' size change with screen size  */
 @media only screen and (max-width: 1060px) {
   .img-itac{
     width: 23vw;
@@ -148,7 +153,17 @@ nav.act2>div>div>a{
     width: 41vw;
   }
 }
-/* Section2 */
+/* Sections - do not touch the top */
 .secContent{
   padding-top: 35px;
+}
+/* Section5 - Flexbox vertical & horizontal center*/
+.section5{
+  height: 300px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
