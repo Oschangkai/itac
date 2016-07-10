@@ -22,40 +22,42 @@
 
 <body>
 <!-- loader -->
-  <load class="ui active dimmer">
-    <load class="ui loader huge indeterminate"></load>
-  </load>
+<load class="ui active dimmer">
+  <load class="ui loader huge indeterminate"></load>
+</load>
+<!-- Sidebar -->
+<snav class="ui left vertical sidebar labeled icon menu inverted overlay" style="z-index: 999">
+  <a class="item">
+    <i><img src="assets/img/icon-red.png" style="height: 40px; weight: 40px;"></i><br /> ITAC </a>
+  <a class="item red" data-scroll-nav="1">
+    <i class="home icon"></i>首頁</a>
+  <a class="item red" data-scroll-nav="2">
+    <i class="info icon"></i>關於 ITAC</a>
+  <a class="item red" data-scroll-nav="3">
+    <i class="idea icon"></i>作品集</a>
+  <a class="item red" data-scroll-nav="4">
+    <i class="calendar icon"></i>時程表</a>
+  <a class="ui item red" data-scroll-nav="5">
+    <i class="mail icon"></i>我要報名</a>
+</snav>
+<div class="pusher">
+
+<!-- Navbar -->
+  <nav class="navbar act1">
+    <div class="ui secondary menu huge container">
+      <a class="item" data-scroll-nav="1"><img src="assets/img/icon-red.png" style="height: 40px; weight: 40px;   margin: 0; padding: 0;"></a>
+      <a class="item red desktop" data-scroll-nav="2">關於 ITAC</a>
+      <a class="item red desktop" data-scroll-nav="3">作品集</a>
+      <a class="item red desktop" data-scroll-nav="4">時程表</a>
+      <div class="right menu">
+        <a class="ui item red desktop" data-scroll-nav="5">我要報名</a>
+        <a class="ui item" onclick="$('.ui.labeled.icon.sidebar').sidebar('toggle');">
+          &nbsp;&nbsp;<i class="content icon large"></i></a>
+      </div>
+    </div>
+  </nav>
 <!-- Sections -->
   <section class="section1" data-scroll-index="1">
-    <!-- Navbar -->
-    <nav class="navbar act1">
-    <!-- Top -->
-      <div class="ui secondary menu huge container">
-        <a class="item" data-scroll-nav="1"><img src="assets/img/icon-red.png" style="height: 40px; weight: 40px; margin: 0; padding: 0;"></a>
-        <a class="item red desktop" data-scroll-nav="2">關於 ITAC</a>
-        <a class="item red desktop" data-scroll-nav="3">作品集</a>
-        <div class="right menu">
-          <a class="ui item red desktop" href="http://itac.kktix.cc/">我要報名</a>
-          <a class="ui item" onclick="$('.ui.labeled.icon.sidebar').sidebar('toggle');">
-            &nbsp;&nbsp;<i class="content icon large"></i></a>
-        </div>
-      </div>
-        <!-- Sidebar -->
-        <snav class="ui left vertical sidebar labeled icon menu inverted">
-          <a class="item">
-            <i><img src="assets/img/icon-red.png" style="height: 40px; weight: 40px;"></i><br /> ITAC </a>
-          <a class="item red" data-scroll-nav="1">
-            <i class="home icon"></i>首頁</a>
-          <a class="item red" data-scroll-nav="2">
-            <i class="info icon"></i>關於 ITAC</a>
-          <a class="item red" data-scroll-nav="3">
-            <i class="idea icon"></i>作品集</a>
-          <a class="ui item red" href="http://itac.kktix.cc/">
-            <i class="mail icon"></i>我要報名</a>
-        </snav>
-    </nav>
-
-    <!-- Section1-Content -->
     <content class="section1-content">
       <br />
       <img src="assets/img/icon.png" class="img-icon"><br /><br />
@@ -65,14 +67,32 @@
     </content>
   </section>
 
-  <section style="height: 90vh; background-color: white;" data-scroll-index="2">
-    <content class="ui container section2-content">
+  <section style="height: 90vh; background-color: red;" data-scroll-index="2">
+    <content class="ui container secContent">
       <h1>關於 ITAC</h1>
     </content>
   </section>
 
-  <section class="section3" style="height: 200vh; background-color: yellow;" data-scroll-index="3">
+  <section style="height: 200vh; background-color: yellow;" data-scroll-index="3">
+    <content class="ui container secContent">
+      <h1>作品集</h1>
+    </content>
   </section>
+
+  <section style="height: 150vh; background-color: blue;" data-scroll-index="4">
+    <content class="ui container secContent">
+      <h1>時程表</h1>
+    </content>
+  </section>
+
+  <section style="height: 50vh; background-color: green;" data-scroll-index="5">
+    <content class="" style="vertical-align: middle;">
+      <a href="http://itac.kktix.cc/" style="display: table-cell; vertical-align: middle;"><button class="red ui inverted massive button">我要報名</button></a>
+    </content>
+  </section>
+
+</div>
+
 
   <!-- Scripts -->
   <script src="assets/js/scrollIt.min.js"></script>
