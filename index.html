@@ -4,35 +4,40 @@
 <!-- Metas -->
 <meta charset="utf-8">
 <title>元智大學 | ITAC</title>
+<!-- Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no" />
   <meta name="author" content="KaiYi.C">
-  <meta name="description" content="元智大學 ITAC 官方網站">
+  <meta name="description" content="元智大學 ITAC 官方網站，歡迎大家的加入！">
   <meta name="keywords" content="元智大學, 元智, ITAC, 社團, 資訊研究社" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="assets/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#DB2828">
-<meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#DB2828">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png"  >
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#DB2828">
+  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#DB2828">
 <!-- CSSs -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.css'>
+  <link rel="stylesheet" href="assets/css/desktop.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/timeline.css">
 <!-- Scripts -->
+  <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-80552556-1', 'auto');ga('send', 'pageview');</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.js"></script>
   <!--[if lt IE 9]>
@@ -46,7 +51,7 @@
   <load class="ui loader huge indeterminate"></load>
 </load>
 <!-- Sidebar -->
-<snav class="ui left vertical sidebar labeled icon menu inverted overlay" style="z-index: 999">
+<snav class="ui right vertical sidebar labeled icon menu inverted overlay" style="z-index: 999">
   <a class="item">
     <i><img src="assets/img/icon-red.png" style="height: 40px; weight: 40px;"></i><br /> ITAC </a>
   <a class="item red" data-scroll-nav="1">
@@ -66,12 +71,13 @@
   <nav class="navbar act1">
     <div class="ui secondary menu huge container">
       <a class="item" data-scroll-nav="1"><img src="assets/img/icon-red.png" style="height: 40px; weight: 40px;  margin: 0; padding: 0;"></a>
+      <a class="item mobile" style="margin-left: -0.8rem;">元智大學資研社&nbsp;(ITAC)</a>
       <a class="item red desktop" data-scroll-nav="2">關於 ITAC</a>
       <a class="item red desktop" data-scroll-nav="3">作品集</a>
       <a class="item red desktop" data-scroll-nav="4">時程表</a>
       <div class="right menu">
         <a class="ui item red desktop" data-scroll-nav="5">我要報名</a>
-        <a class="ui item" onclick="$('.ui.labeled.icon.sidebar').sidebar('toggle');">
+        <a class="ui item mobile" style="margin-left: -0.8rem;" onclick="$('.ui.labeled.icon.sidebar').sidebar('toggle');">
           &nbsp;&nbsp;<i class="content icon large"></i></a>
       </div>
     </div>
@@ -82,33 +88,125 @@
       <br />
       <img src="assets/img/icon.png" class="img-icon"><br /><br />
       <img src="assets/img/itac.png" class="img-itac"><br /><br /><br /><br />
-      <strong style="color: rgba(255,254,255,0.9); font-size: 160%;">成為資深工具人的最後一個步驟</strong><br /><br /><br />
-      <a style="color: hsl(0, 0%, 90%);"><i class="dropdown icon huge sec1Dropdown" data-scroll-goto="2"></i></a>
+      <!--slogan最多14字-->
+      <strong style="color: rgba(255,254,255,0.9); font-size: 160%;">你&nbsp;&nbsp;&nbsp;也是資訊狂熱者嗎？</strong><br /><br /><br />
+      <a style="color: hsl(0, 0%, 90%);" href="#"><i class="dropdown icon huge sec1Dropdown" data-scroll-goto="2"></i></a>
     </content>
   </section>
 
-  <section style="height: 90vh; background-color: red;" data-scroll-index="2">
+  <section style="background-color: #000;" data-scroll-index="2" class="section2">
     <content class="ui container secContent">
       <h1>關於 ITAC</h1>
+      <p>
+        ITAC&nbsp;&nbsp;創立的初衷&nbsp;&nbsp;—&nbsp;&nbsp;「有些事現在不做，一輩子都不會做」。<br />
+        2014&nbsp;&nbsp;年的暑假尾聲，正當其他同學們在各地玩得不亦樂乎時，一群熱愛資訊的元智人默默開始聚集，
+        秉持著「為什麼元智沒有資訊社？」、「那就創一個吧？」的想法，創立了元智第一個資訊性社團&nbsp;&nbsp;—&nbsp;&nbsp;ITAC。
+      </p>
+      <p>
+        ITAC&nbsp;&nbsp;全名為&nbsp;&nbsp;Information Technology Association Club，是由一群熱愛程式的元智學生創立的社團。<br />
+        ITAC&nbsp;&nbsp;現階段的成員橫跨大一到大四，成員擅長領域包括Android、iOS App開發，
+        HTML、CSS、JavaScript、PHP網站設計，
+        MySQL資料庫管理，Python，資訊安全等等，
+        更有多位成員早已在業界工作或是代表學校參加比賽，成員們也期望未來能夠分享給喜歡資訊的同學們。
+      </p>
+      <p>
+        如果對於寫程式只為應付作業的生活感到厭倦，或是想嘗試課外之餘接案賺取零用的同學，給自己一個機會，
+        一起學習「學校不教的事」，讓自己擁有更多能力去改變自己、改變世界。
+      </p>
+
     </content>
   </section>
 
-  <section style="height: 200vh; background-color: yellow;" data-scroll-index="3">
+  <section style="height: 200vh; background-color: grey;" data-scroll-index="3">
     <content class="ui container secContent">
       <h1>作品集</h1>
     </content>
   </section>
 
-  <section style="height: 150vh; background-color: blue;" data-scroll-index="4">
+  <section style="height: 1700px; background-color: #000;" data-scroll-index="4">
     <content class="ui container secContent">
       <h1>時程表</h1>
+      <div class="timelineContainer" id="timeline">
+        <!-- Timeline - Block1 -->
+        <div class="timelineBlock">
+          <div class="timelineImg" style="background-color: rgb(0, 28, 49);">
+            <img src="assets/img/yzu2016camp.png" style="  width: 42px; height: 42px; margin-left: -21px; margin-top: -21px;">
+          </div>
+          <div class="timelineContent">
+            <h2>2016&nbsp;三資迎新</h2>
+            <p>想不想為你大學四年立下一個無與倫比的起點呢？來參加我們的三資迎新吧！</p>
+            <a href="https://yzu2016camp.itaclub.asia" class="timelineReadmore" style="background: rgba(0, 28, 49, 0.95);">官方網站</a>
+            <span class="timelineDate">8/22&nbsp;&nbsp;-&nbsp;&nbsp;8/26</span>
+          </div>
+        </div>
+        <!-- Timeline - Block2 -->
+        <div class="timelineBlock">
+          <div class="timelineImg" style="background: white;">
+            <img src="assets/img/school.png" style="border-radius: 26px; -webkit-border-radius: 26px; -moz-border-radius: 26px;">
+          </div>
+          <div class="timelineContent">
+            <h2>開學前...</h2>
+            <p>
+              <b>8/27&nbsp;-&nbsp;8/29&nbsp;&nbsp;</b>新生入住<br />
+              <b>8/29&nbsp;&nbsp;</b>新生健檢<br />
+              <b>8/30&nbsp;-&nbsp;9/7&nbsp;&nbsp;</b>可以抵學分的英語營唷^^<br />
+            </p>
+              <a href="http://www.yzu.edu.tw/admin/aa/files/Calendar/105校曆 104-15行政會議通過版(公告版).doc" class="timelineReadmore" style="background: rgba(0, 0, 153, 0.95);">105行事曆</a>
+            <span class="timelineDate">8/27&nbsp;&nbsp;-&nbsp;&nbsp;9/7</span>
+          </div>
+        </div>
+        <!-- Timeline - Block3 -->
+        <div class="timelineBlock">
+          <div class="timelineImg" style="background-color: #fff;">
+            <img src="assets/img/location.png" style="border-radius: 26px; -webkit-border-radius: 26px; -moz-border-radius: 26px;">
+          </div>
+          <div class="timelineContent">
+            <h2>萬國博覽會</h2>
+            <p>
+              新生入學輔導(9/8-9/9)的第一天下午，會有社團博覽會<br />
+              ITAC&nbsp;在當天也會在操場擺攤，有介紹也有小教學<br />
+              歡迎大家來玩個小遊戲，順便來認識我們唷~
+            </p>
+            <span class="timelineDate">9/8</span>
+          </div>
+        </div>
+        <!-- Timeline - Block4 -->
+        <div class="timelineBlock">
+          <div class="timelineImg" style="background-color: #fff">
+            <img src="assets/img/event.png" style="border-radius: 26px; -webkit-border-radius: 26px; -moz-border-radius: 26px;">
+          </div>
+          <div class="timelineContent">
+            <h2>社團招募大會</h2>
+            <p>
+              在這天晚上，我們會舉辦一個小面試，聊聊大家想進來的原因<br />
+              屆時會在&nbsp;<a href="https://fb.com/yzuitac">Facebook</a>&nbsp;粉專公布面試報名網站<br />
+            </p>
+            <a href="http://itac.kktix.cc/" class="timelineReadmore" style="background: #75ce66;">KKTIX報名頁(尚未開放)</a>
+            <span class="timelineDate">9/27</span>
+          </div>
+        </div>
+        <!-- Timeline - Block5 -->
+        <div class="timelineBlock">
+          <div class="timelineImg" style="background-color: rgb(254, 24, 0)">
+            <img src="assets/img/icon.png">
+          </div>
+          <div class="timelineContent">
+            <h2>第一堂社課</h2>
+            <p>
+              第一堂社課會請大家上台說說對社團的期望<br />
+              順便讓大家認識優秀的你<br />
+            </p>
+            <span class="timelineDate">10/4</span>
+          </div>
+        </div>
+      </div>
     </content>
   </section>
 
-  <section class="section5" style="height: 50vh; background-color: green;" data-scroll-index="5">
+  <section class="section5" style="height: 40vh; background-color: #000;" data-scroll-index="5">
     <content>
       <a href="http://itac.kktix.cc/">
-        <button class="red ui inverted massive button">我要報名</button></a>
+        <button class="red ui inverted massive button">立即報名(尚未開放)</button></a>
     </content>
   </section>
 </div>
@@ -118,5 +216,7 @@
   <script src="assets/js/scrollIt.min.js"></script>
   <script src="assets/js/parallax.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/timeline.js"></script>
+  <script src="assets/js/desktop.js"></script>
 </body>
 </html>
