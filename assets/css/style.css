@@ -3,6 +3,9 @@ html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body {
+  font-family: 'Noto Sans TC', sans-serif!important;
+}
 
 /* Navbar */
 .navbar{
