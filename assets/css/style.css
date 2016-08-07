@@ -35,7 +35,7 @@ nav.act1>div>a, nav.act1>div>div>a{
   color: rgba(240, 240, 240, 0.6)!important;
 }
 nav.act2 a.mobile {
-  color: #DB2828!important;
+  color: rgb(230, 80, 80)!important;
 }
 /* Navbar - act2's text color (2 styles) */
 nav.act2>div>div>a>i{
@@ -147,19 +147,10 @@ nav.act2>div>div>a{
     transform: translateY(0);
   }
 }
-/* Section2 - Background */
-.section2 {
-  color: white;
-  height: 90vh;
-  background-color: #000;
-  background-image: url(../img/icon-opa5.png);
-  background-repeat: no-repeat;
-  background-position: right 80px bottom 80px;
-}
 /* Sections */
 .secContent h1 {
   line-height: 80px;
-  color: white;
+  color: rgb(230, 80, 80);
 }
 .secContent p {
   /*text-indent: 25px;*/
@@ -173,6 +164,26 @@ nav.act2>div>div>a{
 .secContent {
   padding-top: 35px;
 }
+/* Section2 - Background */
+.section2 {
+  color: white;
+  height: 90vh;
+  background-color: #000;
+  background-image: url(../img/icon-opa5.png);
+  background-repeat: no-repeat;
+  background-position: right 80px bottom 80px;
+}
+.section3 {
+  height: 120vh;
+  background-color: #000;
+  color:white;
+}
+.section4 {
+  background-image: -webkit-radial-gradient(rgb(30, 30, 30), rgb(0, 0, 0));
+  background-image:    -moz-radial-gradient(rgb(30, 30, 30), rgb(0, 0, 0));
+  background-image:      -o-radial-gradient(rgb(30, 30, 30), rgb(0, 0, 0));
+  background-image:         radial-gradient(rgb(30, 30, 30), rgb(0, 0, 0));
+}
 /* Section5 - Flexbox vertical & horizontal center */
 .section5 {
   height: 300px;
@@ -182,6 +193,12 @@ nav.act2>div>div>a{
           align-items: center;
   -webkit-justify-content: center;
           justify-content: center;
+  background-color: #000;
+}
+@media only screen and (max-width: 1200px) {
+  .section3 {
+    height: 1000px;
+  }
 }
 @media only screen and (max-width: 1060px) {
   .img-itac{
@@ -223,6 +240,9 @@ nav.act2>div>div>a{
 @media only screen and (max-height: 480px) {
   .section2 {
     height: 840px;
+  }
+  .section3 {
+    height: 1200px;
   }
 }
 @media only screen and (max-width: 550px) {
